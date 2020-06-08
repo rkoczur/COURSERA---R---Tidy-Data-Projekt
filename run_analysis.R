@@ -37,3 +37,6 @@ library(dplyr)
 AvgDataset <- tbl_df(myDataset)
 AvgDataset <- AvgDataset[,-1] 
 AvgDataset <- AvgDataset %>% group_by(subject, activity) %>% summarise_all(funs(mean))
+
+#Writing the final dataset to TXT
+write.table(AvgDataset, "tidyDataset.txt", row.names = FALSE)
