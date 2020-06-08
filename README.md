@@ -6,13 +6,13 @@
 * **activity_labels.txt** - Labels for activity numbers
 * **subject_ .txt** - Subjects vector
 * **y_ .txt** - Activity vector
-* **X_** - Observations
+* **X_ .txt** - Observations
 
 After making the dataframe, subset it by column names (contains mean() or std()), than cleaning the variable names: deleting parentheses and hypens. After the mean and std strings it uses a dot to keep the names readable.
 
 The last part is made with dplyr packages. Copy the dataset to AvgDataset as a "Tibble". Before summarizing delete the type variable, as it would generate a warning. 
 
-My opinions:
+*My opinions:*
 - It took almost an hour to understand what's going on with all these text files.
 - Was 3,5 hour to make everything done
 - It was fun :)
